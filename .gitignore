@@ -1,0 +1,4 @@
+secrets.toml
+venv/
+data/
+.DS_Store

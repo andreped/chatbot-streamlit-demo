@@ -1,8 +1,9 @@
 import json
 
 import streamlit as st
-from src.utils import download_test_data
-from src.utils import load_data
+
+from chatbot.utils import download_test_data
+from chatbot.utils import load_data
 
 # Initialize message history
 st.header("Chat with André's research 💬 📚")

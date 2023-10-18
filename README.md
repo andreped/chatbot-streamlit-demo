@@ -1,6 +1,6 @@
 # chatbot-streamlit-demo
 
-This application demonstrates how to setup a simple ChatBot with Azure OpenAI and StreamLit.
+This application demonstrates how to setup a simple ChatBot with Azure OpenAI and Streamlit.
 
 The ChatBot enables you to talk with your own data - in this case, to learn about André's research.
 
@@ -42,7 +42,7 @@ A Streamlit browser window should automatically open. If not, the app can be acc
 
 Below is a snapshot on how the UI should look. A live demo may be made openly available in the future.
 
-<img width="800" alt="Screenshot 2023-10-18 at 13 06 51" src="https://github.com/andreped/chatbot-streamlit-demo/assets/29090665/560ae794-089f-409a-9aaa-8f9c3e204c5e">
+<img width="800" alt="Screenshot 2023-10-18 at 13 06 51" src="https://github.com/andreped/chatbot-streamlit-demo/assets/29090665/0e367153-9f0e-48d6-8059-dd060f917a97">
 
 ## License
 

@@ -2,12 +2,14 @@ import json
 import os
 
 import streamlit as st
+from gdown import download_folder
 from llama_index import ServiceContext
 from llama_index import SimpleDirectoryReader
 from llama_index import VectorStoreIndex
 from llama_index import set_global_service_context
 from llama_index.embeddings import OpenAIEmbedding
 from llama_index.llms import AzureOpenAI
+
 
 # Initialize message history
 st.header("Chat with André's research 💬 📚")
@@ -18,6 +20,12 @@ if "messages" not in st.session_state.keys():  # Initialize the chat message his
 # Load config values
 with open(r"config.json") as config_file:
     config_details = json.load(config_file)
+
+
+def download_test_data():
+    url = "https://drive.google.com/drive/folders/1uDSAWtLvp1YPzfXUsK_v6DeWta16pq6y"
+    with st.spinner(text="Downloading test data. Might take a few seconds."):
+        download_folder(url, quiet=True, use_cookies=False, output="./data/")
 
 
 @st.cache_resource(show_spinner=False)
@@ -53,6 +61,7 @@ def load_data():
 
 
 def main():
+    download_test_data()
     index = load_data()
     chat_engine = index.as_chat_engine(chat_mode="condense_question", verbose=True)
 

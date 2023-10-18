@@ -20,14 +20,20 @@ pip install -r requirements.txt
 export OPENAI_API_KEY=<insert key here>
 ```
 
-3. Download test data:
+3. Create the `config.json` file and fill in the relevant info:
 ```
-gdown https://drive.google.com/drive/folders/1uDSAWtLvp1YPzfXUsK_v6DeWta16pq6y -O ./data/ --folder
+{
+    "CHATGPT_MODEL":"<insert model name>",
+    "OPENAI_API_BASE":"https://<insert-openai-service-name>.openai.azure.com",
+    "OPENAI_API_VERSION":"<insert version>",
+    "ENGINE": "<insert deployment model name>",
+    "ENGINE_EMBEDDING": "<insert deployment embedding name>"
+}
 ```
 
-3. Launch the app:
+4. Launch the app:
 ```
 streamlit run app.py
 ```
 
-You can then access the app in your browser at `http://localhost:8501`
+A Streamlit browser window should automatically open. If not, the app can be accessed at `http://localhost:8501`

@@ -37,3 +37,13 @@ streamlit run app.py
 ```
 
 A Streamlit browser window should automatically open. If not, the app can be accessed at `http://localhost:8501`
+
+## Demonstration
+
+Below is a snapshot on how the UI should look. A live demo may be made openly available in the future.
+
+<img width="800" alt="Screenshot 2023-10-18 at 13 06 51" src="https://github.com/andreped/chatbot-streamlit-demo/assets/29090665/560ae794-089f-409a-9aaa-8f9c3e204c5e">
+
+## License
+
+The code in this repository is released under [MIT license](https://github.com/andreped/chatbot-streamlit-demo/blob/main/LICENSE).

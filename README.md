@@ -6,9 +6,11 @@ The ChatBot enables you to talk with your own data - in this case, to learn abou
 
 ## Getting Started
 
+These instructions were tested on a MacBook Pro with M2 chip running macOS 13.6 Ventura with Python 3.9.6.
+
 1. Setup virtual environment and install dependencies:
 ```
-python -m venv venv/
+python3 -m venv venv/
 source venv/bin/activate
 pip install -r requirements.txt
 ```

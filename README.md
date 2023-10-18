@@ -1,12 +1,12 @@
 # chatbot-streamlit-demo
 
-This application demonstrates how to setup a simple ChatBot with Azure OpenAI and Streamlit.
+This application demonstrates how to setup a simple ChatBot with [Azure OpenAI](https://azure.microsoft.com/en-us/products/ai-services/openai-service) and [Streamlit](https://streamlit.io).
 
-The ChatBot enables you to talk with your own data - in this case, to learn about André's research.
+The ChatBot enables you to talk with your own data - in this case, to learn about [André's research](https://scholar.google.com/citations?user=U20zUHQAAAAJ).
 
 ## Getting Started
 
-These instructions were tested on a MacBook Pro with M2 chip running macOS 13.6 Ventura with Python 3.9.6.
+These instructions were tested on a MacBook Pro with M2 chip running macOS 13.6 Ventura with `Python 3.9.6`.
 
 1. Setup virtual environment and install dependencies:
 ```

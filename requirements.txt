@@ -3,3 +3,4 @@ openai
 llama-index
 nltk
 pypdf
+gdown

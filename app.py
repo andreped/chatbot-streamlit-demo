@@ -10,7 +10,6 @@ from llama_index import set_global_service_context
 from llama_index.embeddings import OpenAIEmbedding
 from llama_index.llms import AzureOpenAI
 
-
 # Initialize message history
 st.header("Chat with André's research 💬 📚")
 

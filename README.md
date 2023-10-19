@@ -1,6 +1,6 @@
 # chatbot-streamlit-demo
 
-This application demonstrates how to setup a simple ChatBot with [Azure OpenAI](https://azure.microsoft.com/en-us/products/ai-services/openai-service) and [Streamlit](https://streamlit.io).
+This application demonstrates how to setup a simple ChatBot with [Azure OpenAI](https://azure.microsoft.com/en-us/products/ai-services/openai-service), [llama-index](https://docs.llamaindex.ai/en/stable/), and [Streamlit](https://streamlit.io).
 
 The ChatBot enables you to talk with your own data - in this case, to learn about [André's research](https://scholar.google.com/citations?user=U20zUHQAAAAJ).
 
@@ -43,6 +43,10 @@ A Streamlit browser window should automatically open. If not, the app can be acc
 Below is a snapshot on how the UI should look. A live demo may be made openly available in the future.
 
 <img width="800" alt="Screenshot 2023-10-18 at 13 06 51" src="https://github.com/andreped/chatbot-streamlit-demo/assets/29090665/0e367153-9f0e-48d6-8059-dd060f917a97">
+
+## Disclaimer
+
+Only public PDFs were used for this demonstration. Some of André's research is sadly behind a paywall and thus we have chosen not to include the PDFs in this demo to avoid copyright issues.
 
 ## License
 

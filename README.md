@@ -70,6 +70,10 @@ A Streamlit browser window should automatically open. If not, the app can be acc
 
 Only public PDFs were used for this demonstration. Some of André's research is sadly behind a paywall and thus we have chosen not to include the PDFs in this demo to avoid copyright issues.
 
+## Acknowledgements
+
+I wish to thank [Sopra Steria](https://www.soprasteria.com) for giving me the chance to develop this web application on internal time. I also want to thank [OpenAI](https://openai.com), [Microsoft Azure](https://azure.microsoft.com/en-us), and the developers of [llama-index](https://www.llamaindex.ai), [Streamlit](https://streamlit.io), and [HuggingFace](https://huggingface.co) for making such great tools to make applications in.
+
 ## License
 
 The code in this repository is released under [MIT license](https://github.com/andreped/chatbot-streamlit-demo/blob/main/LICENSE).

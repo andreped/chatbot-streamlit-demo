@@ -1,10 +1,13 @@
 # chatbot-streamlit-demo
 
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://chatbot-app-demo.streamlit.app)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+
 This application demonstrates how to setup a simple ChatBot with [Azure OpenAI](https://azure.microsoft.com/en-us/products/ai-services/openai-service), [llama-index](https://docs.llamaindex.ai/en/stable/), and [Streamlit](https://streamlit.io).
 
 The ChatBot enables you to talk with your own data - in this case, to learn about [André's research](https://scholar.google.com/citations?user=U20zUHQAAAAJ).
 
-## Demo
+## Demo [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://chatbot-app-demo.streamlit.app)
 
 A demo is hosted publicly at Streamlit at [https://chatbot-app-demo.streamlit.app](https://chatbot-app-demo.streamlit.app).
 

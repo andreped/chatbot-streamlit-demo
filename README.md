@@ -1,5 +1,5 @@
 ---
-title: 'ChatBot: learn about André's research through an AI assistant'
+title: "ChatBot: learn about André's research through an AI assistant"
 colorFrom: indigo
 colorTo: indigo
 sdk: streamlit

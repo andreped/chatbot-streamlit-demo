@@ -1,3 +1,16 @@
+---
+title: 'ChatBot: learn about André's research through an AI assistant'
+colorFrom: indigo
+colorTo: indigo
+sdk: streamlit
+sdk_version: 1.27.2
+app_port: 7860
+emoji: 💬
+pinned: false
+license: mit
+app_file: app.py
+---
+
 # chatbot-streamlit-demo
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://chatbot-app-demo.streamlit.app)

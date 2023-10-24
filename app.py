@@ -1,9 +1,12 @@
-import json
+import os
 
 import streamlit as st
 
 from chatbot.utils import download_test_data
 from chatbot.utils import load_data
+
+# add OpenAI API key to environemntal variables
+os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
 
 # Initialize message history
 st.header("Chat with André's research 💬 📚")
@@ -11,15 +14,10 @@ st.header("Chat with André's research 💬 📚")
 if "messages" not in st.session_state.keys():  # Initialize the chat message history
     st.session_state.messages = [{"role": "assistant", "content": "Ask me a question about André's research!"}]
 
-# Load config values
-with open(r"config.json") as config_file:
-    config_details = json.load(config_file)
-
-
 def main():
     # setup dataset
     download_test_data()
-    index = load_data(config_details)
+    index = load_data()
     chat_engine = index.as_chat_engine(chat_mode="condense_question", verbose=True)
 
     if prompt := st.chat_input("Your question"):  # Prompt for user input and save to chat history

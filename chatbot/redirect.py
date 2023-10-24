@@ -84,7 +84,7 @@ class _Redirect:
             )
 
         if self.to and (not hasattr(self.to, "text") or not hasattr(self.to, "empty")):
-            raise ValueError(f"'to' is not a streamlit container object")
+            raise ValueError(f"'to' is not a streamlit container object: {self.to}")
 
     def __enter__(self):
         if self.st is not None:

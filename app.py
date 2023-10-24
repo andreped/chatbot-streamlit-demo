@@ -2,7 +2,6 @@ import os
 
 import streamlit as st
 
-from chatbot import redirect as rd
 from chatbot.data import download_test_data
 from chatbot.data import load_data
 

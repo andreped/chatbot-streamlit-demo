@@ -1,5 +1,7 @@
 import os
 
+from chatbot import redirect as rd
+
 import streamlit as st
 from gdown import download_folder
 from llama_index import ServiceContext
@@ -31,8 +33,8 @@ def load_data():
             api_version=st.secrets["OPENAI_API_VERSION"],
             system_prompt="You are an expert on André's research and your job is to answer"
             "technical questions. Assume that all questions are related to"
-            "André's research. Keep your answers technical and based on facts"
-            " – do not hallucinate features.",
+            "André's research. Keep your answers technical and based on facts;"
+            " do not hallucinate features.",
         )
         # You need to deploy your own embedding model as well as your own chat completion model
         embed_model = OpenAIEmbedding(

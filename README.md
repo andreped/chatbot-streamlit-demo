@@ -13,7 +13,7 @@ A demo is hosted publicly at Streamlit at [https://chatbot-app-demo.streamlit.ap
 
 A snapshot of the UI can be seen below:
 
-![Screenshot 2023-10-24 at 12 02 22](https://github.com/andreped/chatbot-streamlit-demo/assets/29090665/8eebc228-07ff-4ab8-bbfd-c284f7572018)
+![Screenshot 2023-10-24 at 13 03 11](https://github.com/andreped/chatbot-streamlit-demo/assets/29090665/ba82787a-71fc-4d6c-9ae0-c11417df2841)
 
 ## Development
 

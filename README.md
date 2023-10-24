@@ -14,7 +14,7 @@ app_file: app.py
 # chatbot-streamlit-demo
 
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-<a target="_blank" href="https://huggingface.co/spaces/andreped/AeroPath"><img src="https://img.shields.io/badge/🤗%20Hugging%20Face-Spaces-yellow.svg"></a>
+<a target="_blank" href="https://huggingface.co/spaces/andreped/chatbot-streamlit-demo"><img src="https://img.shields.io/badge/🤗%20Hugging%20Face-Spaces-yellow.svg"></a>
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://chatbot-app-demo.streamlit.app)
 
 This application demonstrates how to setup a simple ChatBot with [Azure OpenAI](https://azure.microsoft.com/en-us/products/ai-services/openai-service), [llama-index](https://docs.llamaindex.ai/en/stable/), and [Streamlit](https://streamlit.io).
@@ -27,7 +27,7 @@ The ChatBot enables you to talk with your own data - in this case, to learn abou
 
 We have enabled live hosting through both Streamlit and Hugging Face spaces. Click on the respective badges below to access each:
 
-#### Hugging Face Spaces <a target="_blank" href="https://huggingface.co/spaces/andreped/AeroPath"><img src="https://img.shields.io/badge/🤗%20Hugging%20Face-Spaces-yellow.svg"></a>
+#### Hugging Face Spaces <a target="_blank" href="https://huggingface.co/spaces/andreped/chatbot-streamlit-demo"><img src="https://img.shields.io/badge/🤗%20Hugging%20Face-Spaces-yellow.svg"></a>
 
 ![Screenshot 2023-10-24 at 13 44 15](https://github.com/andreped/chatbot-streamlit-demo/assets/29090665/610ed8f1-39e9-4842-ab5b-93847678812c)
 

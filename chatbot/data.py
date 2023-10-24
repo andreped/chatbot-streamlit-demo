@@ -23,6 +23,8 @@ def download_test_data():
 def load_data():
     with st.spinner(text="Loading and indexing the provided dataset – hang tight! This may take a few seconds."):
         documents = SimpleDirectoryReader(input_dir="./data", recursive=True).load_data()
+    
+    with st.spinner(text="Setting up Azure OpenAI..."):
         llm = AzureOpenAI(
             model="gpt-3.5-turbo",
             engine=st.secrets["ENGINE"],
@@ -36,6 +38,8 @@ def load_data():
             "André's research. Keep your answers technical and based on facts;"
             " do not hallucinate features.",
         )
+
+    with st.spinner(text="Setting up OpenAI Embedding..."):
         # You need to deploy your own embedding model as well as your own chat completion model
         embed_model = OpenAIEmbedding(
             model="text-embedding-ada-002",
@@ -44,7 +48,10 @@ def load_data():
             api_base=st.secrets["OPENAI_API_BASE"],
             api_type="azure",
             api_version=st.secrets["OPENAI_API_VERSION"],
+            embed_batch_size=10,  # set to one to reduce rate limit -> may degrade response runtime
         )
+    
+    with st.spinner(text="Setting up Vector Store Index..."):
         service_context = ServiceContext.from_defaults(llm=llm, embed_model=embed_model)
         set_global_service_context(service_context)
         index = VectorStoreIndex.from_documents(documents)  # , service_context=service_context)

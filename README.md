@@ -9,7 +9,11 @@ The ChatBot enables you to talk with your own data - in this case, to learn abou
 
 ## Demo [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://chatbot-app-demo.streamlit.app)
 
-The demo is hosted live on Streamlit at `https://chatbot-app-demo.streamlit.app`. A snapshot of the UI can be seen below:
+A demo is hosted publicly at Streamlit at [https://chatbot-app-demo.streamlit.app](https://chatbot-app-demo.streamlit.app).
+
+A snapshot of the UI can be seen below:
+
+![Screenshot 2023-10-24 at 12 02 22](https://github.com/andreped/chatbot-streamlit-demo/assets/29090665/8eebc228-07ff-4ab8-bbfd-c284f7572018)
 
 ## Development
 

@@ -4,7 +4,14 @@ This application demonstrates how to setup a simple ChatBot with [Azure OpenAI](
 
 The ChatBot enables you to talk with your own data - in this case, to learn about [André's research](https://scholar.google.com/citations?user=U20zUHQAAAAJ).
 
-## Getting Started
+## Demo
+
+The demo is hosted live on Streamlit at `https://chatbot-app-demo.streamlit.app`. A snapshot of the UI can be seen below:
+
+
+## Development
+
+If you wish to play around with the app locally, it requires that you provide OpenAI API key and all that fun stuff yourself.
 
 These instructions were tested on a MacBook Pro with M2 chip running macOS 13.6 Ventura with `Python 3.9.6`.
 
@@ -15,34 +22,22 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-2. Set OPENAI_API_KEY:
+2. Create the secrets file at `.streamlit/secrets.toml` file and fill in the relevant info:
 ```
-export OPENAI_API_KEY=<insert key here>
-```
-
-3. Create the `config.json` file and fill in the relevant info:
-```
-{
-    "CHATGPT_MODEL":"<insert model name>",
-    "OPENAI_API_BASE":"https://<insert-openai-service-name>.openai.azure.com",
-    "OPENAI_API_VERSION":"<insert version>",
-    "ENGINE": "<insert deployment model name>",
-    "ENGINE_EMBEDDING": "<insert deployment embedding name>"
-}
+OPENAI_API_KEY = "3cc19a1c875749c18c5e5d5a45a08f90"
+CHATGPT_MODEL = "<insert model name>"
+OPENAI_API_BASE = "https://<insert-openai-service-name>.openai.azure.com"
+OPENAI_API_VERSION = "<insert version>"
+ENGINE = "<insert deployment model name>"
+ENGINE_EMBEDDING = "<insert deployment embedding name>"
 ```
 
-4. Launch the app:
+3. Launch the app:
 ```
 streamlit run app.py
 ```
 
 A Streamlit browser window should automatically open. If not, the app can be accessed at `http://localhost:8501`
-
-## Demonstration
-
-Below is a snapshot on how the UI should look. A live demo may be made openly available in the future.
-
-<img width="800" alt="Screenshot 2023-10-18 at 13 06 51" src="https://github.com/andreped/chatbot-streamlit-demo/assets/29090665/0e367153-9f0e-48d6-8059-dd060f917a97">
 
 ## Disclaimer
 

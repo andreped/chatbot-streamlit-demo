@@ -11,14 +11,14 @@ try:
         os.environ[key] = value
 except FileNotFoundError as e:
     print(e)
-    print("./streamlit/secrets.toml not found. Assuming secrets are already available"
-          "as environmental variables...")
+    print("./streamlit/secrets.toml not found. Assuming secrets are already available" "as environmental variables...")
 
 # Initialize message history
 st.header("Chat with André's research 💬 📚")
 
 if "messages" not in st.session_state.keys():  # Initialize the chat message history
     st.session_state.messages = [{"role": "assistant", "content": "Ask me a question about André's research!"}]
+
 
 def main():
     # setup logger sidebar

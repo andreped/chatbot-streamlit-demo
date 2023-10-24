@@ -15,11 +15,12 @@ st.header("Chat with André's research 💬 📚")
 if "messages" not in st.session_state.keys():  # Initialize the chat message history
     st.session_state.messages = [{"role": "assistant", "content": "Ask me a question about André's research!"}]
 
+
 def main():
     # setup logger sidebar
-    #st.sidebar.text("Standard output log:")
-    #_sidebar_out = st.sidebar.empty()
-    #with rd.stdout(to=_sidebar_out, format='text'):
+    # st.sidebar.text("Standard output log:")
+    # _sidebar_out = st.sidebar.empty()
+    # with rd.stdout(to=_sidebar_out, format='text'):
     #    print("test")
 
     # setup dataset

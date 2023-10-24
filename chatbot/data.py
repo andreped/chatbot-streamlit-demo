@@ -1,7 +1,5 @@
 import os
 
-from chatbot import redirect as rd
-
 import streamlit as st
 from gdown import download_folder
 from llama_index import ServiceContext
@@ -11,21 +9,24 @@ from llama_index import set_global_service_context
 from llama_index.embeddings import OpenAIEmbedding
 from llama_index.llms import AzureOpenAI
 
+from chatbot import redirect as rd
+
 
 @st.cache_resource(show_spinner=False)
 def download_test_data():
     # url = f"https://drive.google.com/drive/folders/uc?export=download&confirm=pbef&id={file_id}"
     url = "https://drive.google.com/drive/folders/1uDSAWtLvp1YPzfXUsK_v6DeWta16pq6y"
     with st.spinner(text="Downloading test data. This might take a minute."):
-        # @TODO: replace gown solution with a custom solution compatible with GitHub and 
+        # @TODO: replace gown solution with a custom solution compatible with GitHub and
         # use st.progress to get more verbose during download
         download_folder(url=url, quiet=False, use_cookies=False, output="./data/")
+
 
 @st.cache_resource(show_spinner=False)
 def load_data():
     with st.spinner(text="Loading and indexing the provided dataset – hang tight! This may take a few seconds."):
         documents = SimpleDirectoryReader(input_dir="./data", recursive=True).load_data()
-    
+
     with st.spinner(text="Setting up Azure OpenAI..."):
         llm = AzureOpenAI(
             model="gpt-3.5-turbo",
@@ -50,11 +51,11 @@ def load_data():
             api_base=st.secrets["OPENAI_API_BASE"],
             api_type="azure",
             api_version=st.secrets["OPENAI_API_VERSION"],
-            embed_batch_size=10,  # set to one to reduce rate limit -> may degrade response runtime
+            embed_batch_size=10,  # set to low value to reduce rate limit -> may degrade response runtime
         )
-    
+
     with st.spinner(text="Setting up Vector Store Index..."):
-        service_context = ServiceContext.from_defaults(llm=llm, embed_model=embed_model)
+        service_context = ServiceContext.from_defaults(llm=llm, embed_model=embed_model)  # , chunk_size=512)
         set_global_service_context(service_context)
         index = VectorStoreIndex.from_documents(documents)  # , service_context=service_context)
         return index

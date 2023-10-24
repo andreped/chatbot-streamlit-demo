@@ -5,15 +5,20 @@ import streamlit as st
 from chatbot.data import download_test_data
 from chatbot.data import load_data
 
-# add OpenAI API key to environemntal variables
-os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
+# add all secrets into environmental variables
+try:
+    for key, value in st.secrets.items():
+        os.environ[key] = value
+except FileNotFoundError as e:
+    print(e)
+    print("./streamlit/secrets.toml not found. Assuming secrets are already available"
+          "as environmental variables...")
 
 # Initialize message history
 st.header("Chat with André's research 💬 📚")
 
 if "messages" not in st.session_state.keys():  # Initialize the chat message history
     st.session_state.messages = [{"role": "assistant", "content": "Ask me a question about André's research!"}]
-
 
 def main():
     # setup logger sidebar

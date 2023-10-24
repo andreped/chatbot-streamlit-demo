@@ -28,12 +28,12 @@ def load_data():
     with st.spinner(text="Setting up Azure OpenAI..."):
         llm = AzureOpenAI(
             model="gpt-3.5-turbo",
-            engine=st.secrets["ENGINE"],
+            engine=os.environ["ENGINE"],
             temperature=0.5,
             api_key=os.environ["OPENAI_API_KEY"],
-            api_base=st.secrets["OPENAI_API_BASE"],
+            api_base=os.environ["OPENAI_API_BASE"],
             api_type="azure",
-            api_version=st.secrets["OPENAI_API_VERSION"],
+            api_version=os.environ["OPENAI_API_VERSION"],
             system_prompt="You are an expert on André's research and your job is to answer"
             "technical questions. Assume that all questions are related to"
             "André's research. Keep your answers technical and based on facts;"
@@ -44,11 +44,11 @@ def load_data():
         # You need to deploy your own embedding model as well as your own chat completion model
         embed_model = OpenAIEmbedding(
             model="text-embedding-ada-002",
-            deployment_name=st.secrets["ENGINE_EMBEDDING"],
+            deployment_name=os.environ["ENGINE_EMBEDDING"],
             api_key=os.environ["OPENAI_API_KEY"],
-            api_base=st.secrets["OPENAI_API_BASE"],
+            api_base=os.environ["OPENAI_API_BASE"],
             api_type="azure",
-            api_version=st.secrets["OPENAI_API_VERSION"],
+            api_version=os.environ["OPENAI_API_VERSION"],
             embed_batch_size=10,  # set to low value to reduce rate limit -> may degrade response runtime
         )
 

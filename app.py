@@ -2,8 +2,9 @@ import os
 
 import streamlit as st
 
-from chatbot.utils import download_test_data
-from chatbot.utils import load_data
+from chatbot import redirect as rd
+from chatbot.data import download_test_data
+from chatbot.data import load_data
 
 # add OpenAI API key to environemntal variables
 os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
@@ -15,6 +16,12 @@ if "messages" not in st.session_state.keys():  # Initialize the chat message his
     st.session_state.messages = [{"role": "assistant", "content": "Ask me a question about André's research!"}]
 
 def main():
+    # setup logger sidebar
+    #st.sidebar.text("Standard output log:")
+    #_sidebar_out = st.sidebar.empty()
+    #with rd.stdout(to=_sidebar_out, format='text'):
+    #    print("test")
+
     # setup dataset
     download_test_data()
     index = load_data()

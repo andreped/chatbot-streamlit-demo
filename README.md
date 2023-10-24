@@ -4,7 +4,7 @@ colorFrom: indigo
 colorTo: indigo
 sdk: streamlit
 sdk_version: 1.27.2
-app_port: 7860
+app_port: 8501
 emoji: 💬
 pinned: false
 license: mit

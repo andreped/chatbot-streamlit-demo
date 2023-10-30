@@ -57,9 +57,9 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-2. Create the secrets file at `.streamlit/secrets.toml` file and fill in the relevant info:
+2. Create the secrets file at `.streamlit/secrets.toml` and fill in the relevant info:
 ```
-OPENAI_API_KEY = "3cc19a1c875749c18c5e5d5a45a08f90"
+OPENAI_API_KEY = "<insert OpenAI API key>"
 CHATGPT_MODEL = "<insert model name>"
 OPENAI_API_BASE = "https://<insert-openai-service-name>.openai.azure.com"
 OPENAI_API_VERSION = "<insert version>"

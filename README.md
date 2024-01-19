@@ -80,7 +80,7 @@ Only public PDFs were used for this demonstration. Some of André's research is 
 
 ## [Acknowledgements](https://github.com/andreped/chatbot-streamlit-demo#acknowledgements)
 
-I wish to thank [Sopra Steria](https://www.soprasteria.com) for giving me the chance to develop this web application on internal time. I also want to thank [OpenAI](https://openai.com), [Microsoft Azure](https://azure.microsoft.com/en-us), and the developers of [llama-index](https://www.llamaindex.ai), [Streamlit](https://streamlit.io), and [HuggingFace](https://huggingface.co) for making such great tools to make applications in.
+I wish to acknowledge [Sopra Steria](https://www.soprasteria.com) for giving me the chance to develop this web application on internal time. I also want to praise [OpenAI](https://openai.com), [Microsoft Azure](https://azure.microsoft.com/en-us), and the developers of [llama-index](https://www.llamaindex.ai), [Streamlit](https://streamlit.io), and [HuggingFace](https://huggingface.co) for making such great tools to develop applications in.
 
 ## [License](https://github.com/andreped/chatbot-streamlit-demo#license)
 
